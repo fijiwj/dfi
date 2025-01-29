@@ -1,0 +1,14 @@
+{
+    "videos": [
+      {
+        "title": "Название видео 1",
+        "url": "https://youtu.be/LVwCJ--7Xco?si=tefQlUdbtxrrxuli",
+        "preview": "https://img.youtube.com/vi/VIDEO_ID_1/0.jpg"
+      },
+      {
+        "title": "Название видео 2",
+        "url": "https://www.youtube.com/embed/VIDEO_ID_2",
+        "preview": "https://img.youtube.com/vi/VIDEO_ID_2/0.jpg"
+      }
+    ]
+  }
