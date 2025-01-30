@@ -111,6 +111,8 @@ footer {
     padding-left: 125px;
     padding-right: 125px;
     border: 1px solid rgb(0, 39, 78);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .copy-link:hover {
