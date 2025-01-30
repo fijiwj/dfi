@@ -1,0 +1,154 @@
+:root {
+    --main-color: #00274e;
+    --accent-color: #e74c3c;
+}
+
+body {
+    background: #f8f9fa59;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-title {
+    margin-left: 10px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.search-bar {
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 25px;
+    border: 0px;
+    width: 500px;
+    height: 30px;
+}
+
+.top-bar {
+    background-color: #00274e;
+}
+
+.top-title {
+    color: white;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.video-card {
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.479)
+}
+
+.end-text {
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+    background: rgb(100, 100, 100);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.copy-link {
+    color: rgba(0, 0, 0, 0.74);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: padding-top 0.2s,
+      padding-bottom 0.2s,
+      padding-left 0.2s,
+      padding-right 0.2s,
+      background-color 0.2s,
+      transform 0.2s,
+      color 0.2s;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 125px;
+    padding-right: 125px;
+    border: 1px solid rgb(0, 39, 78);
+}
+
+.copy-link:hover {
+    background-color: rgb(0, 39, 78);
+    border-color: rgb(0, 39, 78);
+    color: rgb(214, 214, 214);
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 125px;
+    padding-right: 125px;
+    transform: translateY(-2px);
+    vertical-align: top;
+}
+
+.copy-link:active {
+  background-color: rgba(0, 39, 78, 0.5);
+  border-color: rgba(0, 39, 78, 0.5);
+}
+
+.submit-clip {
+  background-color: rgb(0, 153, 255);
+  color: white;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  border-color: rgb(0, 153, 255);
+  font-weight: bold;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.video-title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
