@@ -23,7 +23,7 @@
         .video-card {
             transition: transform 0.3s;
             border: none;
-            border-radius: 15px;
+            border-radius: 5px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -58,12 +58,69 @@
             color: rgb(214, 214, 214);
             font-weight: bold;
             background: rgb(100, 100, 100);
-            width: 100px;
-            height: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 25px;
             border-style: solid;
-            border-color: rgb(214, 214, 214);
+            border-color: rgb(100, 100, 100);
             border-radius: 25px;
             cursor: pointer;
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .copy-link {
+            color: rgba(0, 0, 0, 0.74);
+            background-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-radius: 5px;
+            transition: padding-top 0.2s,
+              padding-bottom 0.2s,
+              padding-left 0.2s,
+              padding-right 0.2s,
+              background-color 0.2s,
+              transform 0.2s,
+              color 0.2s;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 125px;
+            padding-right: 125px;
+        }
+
+        .copy-link:hover {
+            background-color: rgb(0, 39, 78);
+            border-color: rgb(0, 39, 78);
+            color: rgb(214, 214, 214);
+            border-radius: 5px;
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 125px;
+            padding-right: 125px;
+            transform: translateY(-2px);
+            vertical-align: auto;
+        }
+
+        .copy-link:active {
+          background-color: rgba(0, 39, 78, 0.5);
+          border-color: rgba(0, 39, 78, 0.5);
+        }
+
+        .submit-clip {
+          background-color: rgb(0, 153, 255);
+          color: white;
+          border-style: solid;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          border-radius: 25px;
+          border-color: rgb(0, 153, 255);
+          font-weight: bold;
+          font-size: 15px;
+          vertical-align: top;
         }
 
     </style>
@@ -75,6 +132,7 @@
         </div>
     </nav>
 
+
     <div class="container py-5">
         <h1 class="text-center mb-5">Clips</h1>
         
@@ -82,36 +140,17 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card card h-100">
                     <div class="video-container">
-                        <iframe src="https://youtu.be/LVwCJ--7Xco?si=5RPjNY6LTIl3dOs5" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen
-                                >
-                                </iframe>
                                 <a href="https://youtu.be/LVwCJ--7Xco?si=5RPjNY6LTIl3dOs5">
                                 <img src="https://i.ytimg.com/vi/LVwCJ--7Xco/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDSLNNjCI_R3nJ1qN9l8SQ4Ojf2Kg" alt="preview" width="400" height="300" >
                             </a>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <a href="https://youtu.be/LVwCJ--7Xco?si=5RPjNY6LTIl3dOs5">селидовские пограничники
+                            <a>
+                                селидовские пограничники
                         </a>
                     </h5>
-                        <p class="card-text">desc1</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="video-card card h-100">
-                    <div class="video-container">
-                        <iframe src="https://youtu.be/LVwCJ--7Xco?si=5RPjNY6LTIl3dOs5" 
-                                frameborder="0" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">title2</h5>
-                        <p class="card-text">desc2</p>
+                        <button class="copy-link">Copy link</button>
                     </div>
                 </div>
             </div>
@@ -122,6 +161,7 @@
     <footer>
         <div class="container text-center">
             <button class="end-text" href="https://github.com/fijiwj/dfi">GitHub</button>
+            <button class="submit-clip">Submit clip</button>
         </div>
     </footer>
 
